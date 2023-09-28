@@ -1,13 +1,16 @@
+import { Link } from "react-router-dom";
+import "./stylehome.css";
+
 const Home = () => {
   return (
-    <>
-      <a href="http://localhost:5173/usuarios">
-        <button>Usuarios</button>
-      </a>
-      <a href="http://localhost:5173/usuarios/:pais">
-        <button>Usuarios por pais</button>
-      </a>
-    </>
+    <div className="home">
+      <Link to="/usuarios">
+        <button>Ver Usuarios</button>
+      </Link>
+      <Link to="/usuarios/:">
+        <button>Ver Usuarios por país</button>
+      </Link>
+    </div>
   );
 };
 
